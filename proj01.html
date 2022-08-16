@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<html>
+
+<head>
+	<title> 서울대학교 html 교육</title>
+	<script> 
+	alert('안녕하세요?') <!--알림창-->
+	</script>
+
+</head>
+
+<body>
+	<!---<h1> html 제목 </h1>---> <!--주석처리-->
+	<header>
+		<nav>
+			
+		</nav>
+
+	</header>
+	<main>
+		<section>
+			<h1> 제목 1 </h1> <!--h1, h2, h3는 각 문서의 수준을 나타냄-->
+			<h2> 제목 2 </h2> <!--각 수준 별로 디자인 바꿀 수도 있음-->
+			<h3> 제목 3 </h3>
+				<p> 안녕하세요? <br> <b>반갑습니다.</b> 수업 <i>첫 날</i> 이네요</p> <!--줄바꿈 할때는 <br>-->
+		</section>
+		<section>
+			<hr> <!--구분선-->
+			<h2> 웹개발 프로그램 </h2>
+			<ol type="I" start='2'> 
+			<!--ol: 순서 있는 리스트, default가 숫자, A이면 대문자 알파벳, I 이면 로마자, start는 시작 숫자-->
+			<li> html </li>
+			<li> css </li>
+			<li> js </li>
+			</ol>
+			<ul> 소풍준비물 <!--ul: 순서 없는 리스트-->
+				<li> 돗자리 </li>
+				<li> 김밥 </li>
+			</ul>
+
+			<p> 프론트엔드 개발 </p>
+
+			<h2> 상품구성 </h2>
+			<table>
+				<caption> 표1. 가정용 </caption> <!--표캡션-->
+				<tr>  <!--tr: table row-->
+					<th> 상품 </th> <!--td: table head-->
+					<th> 개수 </th>
+					<th> 중량 </th>
+					<th> 가격 </th>
+				</tr>
+				<tr>
+					<td rowspan="2"> 감귤 </td> <!--td: table data, rowspan 아래 두개 합쳐준다-->
+					<td> 5개 </td> 
+					<td> 50kg </td>
+					<td> 20,000원 </td>  
+				</tr>
+				<tr>
+				<!--첫 td를 없애줘야 표 병합 가능 <td> 감귤 </td> <!--table data-->-->
+					<td> 10개 </td> 
+					<td> 100kg </td>
+					<td> 40,000원 </td>  
+				</tr>
+				<tr>
+					<td> 사과 </td> <!--table data-->
+					<td> 5개 </td> 
+					<td> 20kg </td>
+					<td> 10,000원 </td>  
+				</tr>
+				<tr>
+					<td> 딸기 </td> <!--table data-->
+					<td> 100개 </td> 
+					<td> 60kg </td>
+					<td> 100,000원 </td>  
+				</tr>
+			</table>
+		</section>
+	</main>
+</body>
+
+</html>
+

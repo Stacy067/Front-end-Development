@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>구구단 - for문</title>
+	<link rel="stylesheet" href="css/gugudan.css">
+</head>
+<body>
+	<h1>구구단</h1>
+	<script type="text/javascript">
+		for (var i = 2; i <=9; i++){
+			document.write("<div>");
+			document.write("<h3>"+ i +"단</h3>");
+			for(var n = 1; n <=9; n++){
+				document.write(i + "*" + n +"=" + i*n + "<br>");
+			}
+			document.write("</div>");
+		}
+
+		var num1 = pasrseInt(prompt('첫 번째 숫자:'));
+		var num2 = pasrseInt(prompt('두 번째 숫자:'));
+		var num3 = pasrseInt(prompt('세 번째 숫자:'));
+		var result = add(num1, num2);
+		alert(result);
+
+	</script>
+</body>
+</html>
+
+<!-- while(i<6){
+    sum += i
+    i++
+}-->
+
+
+<!--function add(a, b, c){
+        var sum = a + b + c;
+        return sum;
+    }-->
+

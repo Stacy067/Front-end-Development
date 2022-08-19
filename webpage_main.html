@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>  </title>
+	<style type="text/css">
+		.clear {
+			clear: both;
+		}
+		#page {
+			width: 1000px;
+			margin: 0 auto;
+			border: solid 1px red;
+		}
+
+		* {
+			padding: 0;
+			margin: 0;
+		} /* id class p 순서로 적용되므로 얘는 class한테만 적용되는 것*/
+
+		header {
+			width: 995px;
+			height: 100px;
+			margin-top: 10px;
+			border: solid 1px green;
+		}
+		nav {
+			width: 995px;
+			height: 70px;
+			margin-top: 10px;
+			border: solid 1px green;
+		}
+
+		nav li {
+			float: left;
+		}
+		section {
+			width: 674px;
+			height: 240px;
+			float: left; /*float 설정 먼저 해줘서 왼쪽에 따라들어가도록*/
+			margin-top: 10px;
+			border: solid 1px green;
+		}
+		aside {
+			width: 290px;
+			height: 240px;
+			float: left;
+			margin-top: 10px;
+			margin-left: 29px;
+			border: solid 1px green;
+		}
+		footer{
+			width: 995px;
+			height: 130px;
+			margin-top: 10px;
+			border: solid 1px green;
+
+		}
+
+		#logo {
+			float: left;
+			border: solid 1px red;
+		}
+
+		#top {
+			float: right;
+			margin: 30px 20px 0 0;
+			border: solid 1px red;
+		}
+
+		li {
+			list-style-type: none;
+		}
+
+		#addr {
+			float: left;
+			margin: 30px 0 0 50px;
+		}
+
+		#customer {
+			float: left;
+			margin: 20px 0 0 180px;
+		}
+
+		#menu {
+			float: left;
+		}
+	</style>
+
+</head>
+<body>
+<div id='pages'>
+	<header>
+			<!--헤더 상단-->
+			<div id='logo'>
+				<img src="img/logo.png">
+			</div>
+			<div id='top'>
+				로그인 | 회원가입 | 사이트맵 | 회사소개
+			</div>
+	</header>
+	<div class="clear"></div>
+		<nav id='menu'>
+			<!--네비게이션바-->
+			<ul>
+				<li><img src='img/menu01.png'></li>
+				<li><img src='img/menu02.png'></li>
+				<li><img src='img/menu03.png'></li>
+				<li><img src='img/menu04.png'></li>
+				<li><img src='img/menu05.png'></li>
+				<li><img src='img/menu06.png'></li>
+			</ul>
+		</nav>
+		<div class="clear"></div>
+		<section>
+			<!--메인-->
+			<img src="img/main_img.png">
+		</section>
+		<aside>
+			<!--사이드바-->
+			<ul>
+				<li><img src='img/banner01.png'></li>
+				<li><img src='img/banner02.png'></li>
+			</ul>
+		</aside>
+		
+		<div class="clear"></div>
+		
+		<footer>
+			<!--하단-->
+			<div id='addr'> 
+				<img src ='img/address.png'>
+			</div>
+			<div id='customer'>
+				<img src ='img/customer.png'>
+			</div>
+		</footer>
+		<div class="clear"></div>
+</div> <!--페이지 속성 끝-->
+</body>
+</html>

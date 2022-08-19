@@ -1,25 +1,26 @@
+<!doctype html>
 <html>
-    <head></head>
-    <body>
-        <h1>web</h1>
-        <ol>
-            <li>Hyper Text Markup Language</li>
-            <li>css</li>
-            <li>js</li>
-        </ol>
-        Lorem ipsum dolor sit amet consectet
-        <main>
-            Hello this is my first webpage
-            I am phD econ student in SNU
-            
-            
-        </main>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>To do list</title>	
+	<link rel ='stylesheet' href ="css/input.css">
+</head>
+<body>
+	<div id="wrapper">
+		<h2> 여행 준비물 목록 </h2>
+		<form>
+			<input type = 'text' id = 'item' autofocus="True" onkeyup="if(window.event.keyCode==13){test()}">
+			<button type = 'button' id = 'add' class = 'addBtn'>추가 </button>
 
-        <footer>
-
-        </footer>
-        <nav> 
-            Seohyun Kim 
-        </nav>
+		</form>
+		<div id='itemList'></div>
+	</div>
+	<script src = 'js/checklist-1.js'></script>    
+	<script type="text/javascript">
+		function test(){
+			alert('Enter Key 입력감지\n 추가 버튼을 눌러 리스트를 작성해주세요.')
+		}
+	</script>
 </body>
 </html>

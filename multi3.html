@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>3의 배수인지 확인</title>
+	<link rel="stylesheet" href="css/multi3.css">
+</head>
+<body>
+	<div id="result"></div>
+	<script type="text/javascript">
+		var userNumber = prompt('숫자를 입력하세요');
+		var displayArea = document.querySelector('#result');
+		if (userNumber === "") { 
+			alert('입력값이 없습니다.');
+		}
+		else {
+			if (userNumber % 3 === 0){ 
+			/* "=" 3개는 두 자료형의 변환을 허용하지 않음, 2개 쓰면 true 값으로 변환 */
+				displayArea.innerHTML = userNumber + '은 3의 배수입니다.';
+			}
+			else {displayArea.innerHTML = userNumber + '은 3의 배수가 아닙니다.';
+				
+				}
+			}
+		
+
+	</script>
+</body>
+</html>
